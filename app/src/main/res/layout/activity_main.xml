@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="379dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:hint="ID"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextUniversity"
+        android:layout_width="377dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/editTextID"
+        android:layout_marginBottom="8dp"
+        android:hint="University"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="376dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/editTextUniversity"
+        android:layout_marginBottom="8dp"
+        android:hint="City"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextFounded"
+        android:layout_width="376dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/editTextCity"
+        android:layout_marginBottom="16dp"
+        android:hint="Founded"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFounded"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonInitialize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:minWidth="64dp"
+            android:padding="8dp"
+            android:text="Initialize"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/buttonInsert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:minWidth="64dp"
+            android:padding="8dp"
+            android:text="Insert"
+            android:textSize="9sp" />
+
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:minWidth="64dp"
+            android:padding="8dp"
+            android:text="Update"
+            android:textSize="9sp" />
+
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:minWidth="64dp"
+            android:padding="8dp"
+            android:text="Delete"
+            android:textSize="9sp" />
+
+
+        <Button
+            android:id="@+id/buttonQuery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:minWidth="64dp"
+            android:padding="8dp"
+            android:text="Query"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewUniversities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLayout" />
+
+</RelativeLayout>
